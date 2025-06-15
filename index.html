@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            border: 5px solid red;
+            height: 200px;
+            width: 50%;
+            background-color: tomato;
+            color: wheat;
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 40px;
+            /* position: relative; */
+            text-align: center;
+
+        }
+
+        .green {
+            border: 5px solid red;
+            height: 200px;
+            width: 50%;
+            background-color: green;
+            color: wheat;
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 40px;
+            /* position: relative; */
+            text-align: center;
+
+
+        }
+
+        .blue {
+            border: 5px solid red;
+            height: 200px;
+            width: 50%;
+            background-color: rgb(80, 2, 238);
+            color: wheat;
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 40px;
+            /* position: relative; */
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="red" class="red">
+        <p>
+            Red Box
+        </p>
+        <button onclick="myFunction()">Undu</button>
+
+
+    </div>
+    <div id="green" class="green">
+        <p>
+            Green Box
+        </p>
+        <button onclick="myGreen()">Visible</button>
+
+    </div>
+    <div class="blue">
+        <p>
+            Blue Box
+        </p>
+
+
+        <button onclick="resetAll()">reset all</button>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("red").style.display = 'none';
+        }
+
+        function myGreen() {
+            document.getElementById("green").style.visibility = 'hidden';
+
+        }
+
+        function resetAll() {
+            document.getElementById("red").style.display = 'block';
+
+            document.getElementById("green").style.visibility = 'visible';
+
+        }
+
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Z-Index Challenge</title>
+  <style>
+    .container {
+      position: relative;
+      height: 300px;
+      width: 100%;
+    }
+
+    .box {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      line-height: 200px;
+      border: 3px solid black;
+    }
+
+    #redBox {
+      background-color: red;
+      top: 20px;
+      left: 20px;
+      z-index: 1;
+    }
+
+    #greenBox {
+      background-color: green;
+      top: 60px;
+      left: 60px;
+      z-index: 2;
+    }
+
+    #blueBox {
+      background-color: blue;
+      top: 100px;
+      left: 100px;
+      z-index: 3;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div id="redBox" class="box">Red Box</div>
+    <div id="greenBox" class="box">Green Box</div>
+    <div id="blueBox" class="box">Blue Box</div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="bringToFront('redBox')">Red Top</button>
+    <button onclick="bringToFront('greenBox')">Green Top</button>
+    <button onclick="bringToFront('blueBox')">Blue Top</button>
+  </div>
+
+  <script>
+    function bringToFront(boxId) {
+      // Reset all z-index first
+      document.getElementById('redBox').style.zIndex = 1;
+      document.getElementById('greenBox').style.zIndex = 2;
+      document.getElementById('blueBox').style.zIndex = 3;
+
+      // Then bring selected box to top
+      document.getElementById(boxId).style.zIndex = 10;
+    }
+  </script>
+
+</body>
+</html>
