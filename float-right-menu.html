@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            background-color: red;
+            color: white;
+
+
+
+        }
+
+        .nv {
+            display: flex;
+            gap: 40px;
+
+        }
+
+        .nv a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .ratin {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+
+                MySite
+
+
+            </div>
+
+            <nav class="nv">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <button onclick="myKhan()" id="minhaj" class="ratin">click me</button>
+    <script>
+        function myKhan(){
+            document.getElementById("minhaj").innerHTML="minhajer mamoto vai byjid mawlana samne hobe inshallah"
+        }
+
+    </script>
+</body>
+
+</html>
