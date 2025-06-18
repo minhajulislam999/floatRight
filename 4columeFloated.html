@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            float: left;
+            width: 25%;
+            padding: 30px;
+        }
+        .wrapper::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box" style="background-color: aqua;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolore?</p>
+        </div>
+        <div class="box" style="background-color: aquamarine;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolore?</p>
+        </div>
+        <div class="box" style="background-color: cadetblue;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolore?</p>
+        </div>
+        <div class="box" style="background-color: tomato;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolore?</p>
+        </div>
+    </div>
+</body>
+
+</html>
