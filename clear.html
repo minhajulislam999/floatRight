@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pDiv {
+
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 50%;
+
+        }
+
+        .b1 {
+            background-color: red;
+            text-align: center;
+            border: 4px solid green;
+            margin: 10px;
+            padding: 40px;
+            width: 50px;
+            float: left;
+        }
+
+        .b2 {
+            background-color: green;
+            text-align: center;
+            border: 4px solid red;
+            margin: 10px;
+            padding: 40px;
+            width: 50px;
+            float: left;
+            /* clear: left; */
+        }
+
+        .b3 {
+            background-color: yellow;
+            text-align: center;
+            border: 4px solid red;
+            margin: 10px;
+            padding: 40px;
+            width: 50px;
+            clear: left;
+            /* float: left; */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="pDiv">
+        <div class="b1">
+            <p>box1</p>
+        </div>
+        <div class="b2">
+            <p>box2</p>
+        </div>
+        <div class="b3">
+            <p>box3</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
