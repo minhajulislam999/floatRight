@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+
+            gap: 20px;
+            background-color: rgb(4, 22, 22);
+          padding: 20px 30px 150px;
+
+        }
+
+        li {
+            text-decoration: none;
+            list-style: none;
+            float: left;
+            
+        }
+
+        li a:hover, .active {
+            /* background-color: springgreen; */
+        }
+
+        li a {
+            text-decoration: none;
+            padding: 30px;
+            padding-top: 20px;
+            border-radius: 10px;
+            color: aliceblue;
+            display: inline-block;
+
+        }
+
+        .list {
+            padding: 30px;
+        }
+        .active{
+            background-color: red;
+        }
+        #my.active{
+            background-color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="list"><a  id="my" href="#">Home</a></li>
+        <li class="list"><a href="#">News</a></li>
+        <li class="list" ><a href="#">Contact</a></li>
+        <li class="list"><a href="#">About</a></li>
+    </ul>
+</body>
+
+</html>
